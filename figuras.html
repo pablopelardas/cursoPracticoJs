@@ -10,7 +10,46 @@
     <h1>
         Figuras geométricas
     </h1>
+    <form clas="Cuadrado">
+        <label for="inputCuadrado">
+            Ingresa los valores del lado del cuadrado
+        </label>
+        <input type="number" id="inputCuadrado">
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el diametro del cuadrado
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el area del cuadrado
+        </button>
+    </form>
 
+    <form clas="Triangulo">
+        <label for="inputTriangulo1 inputTriangulo2 inputTriangulo3">
+            Ingresa los 3 lados del triangulo
+        </label>
+        <input type="number" id="inputTriangulo1">
+        <input type="number" id="inputTriangulo2">
+        <input type="number" id="inputTriangulo3">
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+            Calcular el diametro del triangulo
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+            Calcular el area del triangulo
+        </button>
+    </form>
+
+    <form clas="Circulo">
+        <label for="inputCirculo">
+            Ingresa el radio del ciruclo
+        </label>
+        <input type="number" id="inputCirculo">
+        <button type="button" onclick="calcularPerimetroCirculo()">
+            Calcular la circunferencia del circulo
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+            Calcular el area del circulo
+        </button>
+    </form>
     <script src="./figuras.js"></script> 
 </body>
 </html>

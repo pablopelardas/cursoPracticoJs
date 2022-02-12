@@ -43,5 +43,42 @@ console.log("El area del circulo es de " + areaCirculo(4) + "cm2");
 
 console.groupEnd();
 
+function calcularPerimetroCuadrado() {
+    const input= document.getElementById ("inputCuadrado").value;
+    // const value= input.value;
+    const perimetro = perimetroCuadrado(input);
+    alert(perimetro)
+}
 
+function calcularAreaCuadrado() {
+    const input= document.getElementById ("inputCuadrado").value;
+    const area = areaCuadrado(input);
+    alert(area)
+}
 
+function calcularPerimetroTriangulo() {
+    const input1= Number(document.getElementById ("inputTriangulo1").value);
+    const input2= Number(document.getElementById ("inputTriangulo2").value);
+    const input3= Number(document.getElementById ("inputTriangulo3").value);    const perimetro = perimetroTriangulo(input1,input2,input3);
+    alert(perimetro)
+}
+
+function calcularAreaTriangulo() {
+    const input1= Number(document.getElementById ("inputTriangulo1").value);
+    const input2= Number(document.getElementById ("inputTriangulo2").value);
+    const input3= Number(document.getElementById ("inputTriangulo3").value);
+    const area = areaTriangulo(input1,input2,input3);
+    alert(area)
+}
+
+function calcularPerimetroCirculo() {
+    const input= document.getElementById ("inputCirculo").value;
+    const perimetro = perimetroCirculo(input);
+    alert(perimetro)
+}
+
+function calcularAreaCirculo() {
+    const input= document.getElementById ("inputCirculo").value;
+    const area = areaCirculo(input);
+    alert(area)
+}
